@@ -19,11 +19,6 @@ jobs:
         with:
           fetch-depth: 0  # semantic-release needs full history
 
-      - name: Debug token presence
-        run: echo "Length of NPM_TOKEN is ${#NPM_TOKEN}"
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Enable Corepack and install pnpm
         run: |
           corepack enable
@@ -51,6 +46,13 @@ jobs:
 
       - name: Build project
         run: pnpm run build
+
+      - name: Test NPM token manually
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          npm whoami --registry=https://registry.npmjs.org/
 
       - name: Run semantic-release
         env:
