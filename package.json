@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.7.0",
   "dependencies": {
     "@clack/prompts": "^0.10.0",
