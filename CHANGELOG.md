@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/sprout-lab/grow/compare/v1.1.0...v1.1.1) (2025-03-31)
+
+
+### Bug Fixes
+
+* add files to package.json ([e8c133c](https://github.com/sprout-lab/grow/commit/e8c133c7879752cfd9972b29c0f2d2ca742d476f))
+
 # [1.1.0](https://github.com/sprout-lab/grow/compare/v1.0.0...v1.1.0) (2025-03-31)
 
 
