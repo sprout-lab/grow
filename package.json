@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "ts-node index.ts",
-    "build": "tsc"
+    "start:prod": "node dist/main.js",
+    "build": "tsc && cpx 'templates/**/*' dist/templates"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^12.0.1",
     "@types/node": "^22.13.14",
+    "cpx": "^1.5.0",
     "semantic-release": "^24.2.3",
     "typescript": "^5.8.2",
     "vite": "^6.2.3",
