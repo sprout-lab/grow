@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "ts-node src/main.ts",
     "build": "tsc",
-    "start": "",
+    "start": "node dist/main.js",
     "test": "vitest run"
   },
   "keywords": [],
