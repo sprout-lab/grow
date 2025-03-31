@@ -13,7 +13,7 @@
   "scripts": {
     "start": "ts-node index.ts",
     "start:prod": "node dist/main.js",
-    "build": "tsc && cpx 'templates/**/*' dist/templates"
+    "build": "tsc && cpx 'templates/**/{*,.*}' dist/templates"
   },
   "keywords": [],
   "author": "",
