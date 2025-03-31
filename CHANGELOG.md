@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sprout-lab/grow/compare/v1.0.0...v1.1.0) (2025-03-31)
+
+
+### Features
+
+* add readme ([4e58ec1](https://github.com/sprout-lab/grow/commit/4e58ec1c556bd74a37a2e9ff957b08aa6007a1f4))
+
 # 1.0.0 (2025-03-31)
 
 
