@@ -18,6 +18,6 @@
     "noEmitOnError": true,
     "isolatedModules": true
   },
-  "include": ["main.ts", "common", "templates"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["main.ts", "common"],
+  "exclude": ["node_modules", "dist", "templates"]
 }
