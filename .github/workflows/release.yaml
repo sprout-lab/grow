@@ -47,6 +47,13 @@ jobs:
       - name: Build project
         run: pnpm run build
 
+      - name: Confirm token is clean
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "Token length: ${#NPM_TOKEN}"
+          echo "$NPM_TOKEN" | od -c
+
       - name: Test NPM token manually
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
