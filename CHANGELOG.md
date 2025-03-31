@@ -1,0 +1,17 @@
+# 1.0.0 (2025-03-31)
+
+
+### Bug Fixes
+
+* add npmrc ([d5740cc](https://github.com/sprout-lab/grow/commit/d5740ccd01ad377dceb7fef8bb3b6b5dd16bcec9))
+* add pnpm cache to workflow ([738c25c](https://github.com/sprout-lab/grow/commit/738c25ce99fbef680b3ce08aa13058d5fa25f2f4))
+* add public write permissions to package.json ([5295e48](https://github.com/sprout-lab/grow/commit/5295e48dcec2ac65bf6385e240b5abb8e81ca663))
+* add write permissions for gh token ([b12d0a7](https://github.com/sprout-lab/grow/commit/b12d0a77a3ba58d0fafb7e5215a553af690a6d71))
+* enable corepack for pnpm in release workflow ([06b2827](https://github.com/sprout-lab/grow/commit/06b28277b2a5e4135ef15be8b51414b02802f01b))
+* update release workflow to install and verify pnpm ([28e4938](https://github.com/sprout-lab/grow/commit/28e4938909c8fda0c2b519d2d4dbf1a353f388bd))
+* use node@22 in release workflow ([bdf92ba](https://github.com/sprout-lab/grow/commit/bdf92ba0b0be934c095e0c8bd243af7c9213ca7a))
+
+
+### Features
+
+* add binary and release workflow ([bfb3007](https://github.com/sprout-lab/grow/commit/bfb30074e7f977a4093f01fa330168824156b421))
