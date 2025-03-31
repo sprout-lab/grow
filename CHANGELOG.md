@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/sprout-lab/grow/compare/v1.1.3...v1.1.4) (2025-03-31)
+
+
+### Bug Fixes
+
+* include dotfiles in cpx ([e9d3d52](https://github.com/sprout-lab/grow/commit/e9d3d5236d30263ccaaee649012a66425e315b9b))
+
 ## [1.1.3](https://github.com/sprout-lab/grow/compare/v1.1.2...v1.1.3) (2025-03-31)
 
 
