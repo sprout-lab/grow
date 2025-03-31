@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/sprout-lab/grow/compare/v1.1.2...v1.1.3) (2025-03-31)
+
+
+### Bug Fixes
+
+* copy templates to new dist folder on build ([963e224](https://github.com/sprout-lab/grow/commit/963e22415a0dcb97306e3c79524043f5f2de66a9))
+
 ## [1.1.2](https://github.com/sprout-lab/grow/compare/v1.1.1...v1.1.2) (2025-03-31)
 
 
