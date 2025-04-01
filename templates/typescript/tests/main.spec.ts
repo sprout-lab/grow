@@ -1,18 +1,26 @@
-import { describe, it, expect, vi } from 'vitest';
-import { greeting, main } from '../src/main';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { greeting, main } from '../src/main'
 
-describe('greeting function', () => {
-  it('should return "Hello <%= it.projectName %>!"', () => {
-    expect(greeting()).toBe('Hello <%= it.projectName %>!');
-  });
+describe('greeting()', () => {
+  it('returns the correct greeting', () => {
+    expect(greeting()).toBe('Hello <%= it.projectName %>!')
+  })
 });
 
-describe('main function', () => {
-  it('should log the greeting message', async () => {
-    // Spy on console.log
-    const logSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
-    await main();
-    expect(logSpy).toHaveBeenCalledWith('Hello <%= it.projectName %>!');
-    logSpy.mockRestore();
-  });
+describe('main()', () => {
+  const logSpy = vi.spyOn(console, 'log').mockImplementation(() => {})
+
+  beforeEach(() => {
+    logSpy.mockClear()
+  })
+
+  afterEach(() => {
+    logSpy.mockReset()
+  })
+
+  it('logs the greeting to the console', async () => {
+    await main()
+    expect(logSpy).toHaveBeenCalledOnce()
+    expect(logSpy).toHaveBeenCalledWith('Hello <%= it.projectName %>!')
+  })
 });

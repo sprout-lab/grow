@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // Modern JS features & output
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "bundler",
@@ -10,13 +9,13 @@
     "outDir": "dist",
     "noEmit": true,
 
-    // ESM + modern TS flags
+    // ESM + TS flags
     "isolatedModules": true,
     "useDefineForClassFields": true,
     "esModuleInterop": true,
     "moduleDetection": "force",
 
-    // Lint-like type safety
+    // Type safety
     "strict": true,
     "skipLibCheck": true,
     "noUnusedLocals": true,

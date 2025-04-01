@@ -1,14 +1,15 @@
 'use strict';
 
-export const greeting = () => 'Hello <%= it.projectName %>!';
+export const greeting = (): string => 'Hello <%= it.projectName %>!'
 
-export async function main() {
-  console.log(greeting());
+export async function main(): Promise<void> {
+  console.log(greeting())
 }
 
-if (require.main === module) {
-  main().catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+// Run if this is the entry point module
+if (import.meta.url === `file://${process.argv[1]}`) {
+  await main().catch(err => {
+    console.error(err)
+    process.exit(1)
+  })
 }
