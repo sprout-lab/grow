@@ -3,7 +3,7 @@ import { greeting, main } from '../src/main';
 
 describe('greeting()', () => {
   it('returns the correct greeting', () => {
-    expect(greeting()).toBe('Hello super-flower!');
+    expect(greeting()).toBe('Hello <%= it.projectName %>!');
   });
 });
 
@@ -21,6 +21,6 @@ describe('main()', () => {
   it('logs the greeting to the console', async () => {
     await main();
     expect(logSpy).toHaveBeenCalledOnce();
-    expect(logSpy).toHaveBeenCalledWith('Hello super-flower!');
+    expect(logSpy).toHaveBeenCalledWith('Hello <%= it.projectName %>!');
   });
 });
