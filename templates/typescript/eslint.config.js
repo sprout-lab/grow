@@ -1,14 +1,14 @@
-// eslint.config.js
 import js from '@eslint/js'
 import ts from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   js.configs.recommended,
+
   {
     ignores: ['dist', 'node_modules'],
   },
+
   {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
@@ -18,6 +18,15 @@ export default [
         sourceType: 'module',
         ecmaVersion: 'latest',
       },
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+        Buffer: 'readonly',
+      },
     },
     plugins: {
       '@typescript-eslint': ts,
@@ -25,9 +34,6 @@ export default [
     rules: {
       ...ts.configs['strict-type-checked'].rules,
       ...ts.configs['stylistic-type-checked'].rules,
-
-      // custom tweaks (optional)
-      '@typescript-eslint/no-explicit-any': 'warn',
     },
   },
 ]

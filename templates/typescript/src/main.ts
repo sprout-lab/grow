@@ -1,15 +1,23 @@
-'use strict';
-
-export const greeting = (): string => 'Hello <%= it.projectName %>!'
+export const greeting = async (): Promise<string> => {
+  return new Promise((resolve) => {
+    resolve('Hello <%= it.projectName %>!!');
+  });
+};
 
 export async function main(): Promise<void> {
-  console.log(greeting())
+  console.log(await greeting());
 }
 
-// Run if this is the entry point module
-if (import.meta.url === `file://${process.argv[1]}`) {
-  await main().catch(err => {
-    console.error(err)
-    process.exit(1)
-  })
+const isDirectExecution = import.meta.url === `file://${process.argv[1] ?? ''}`;
+if (isDirectExecution) {
+  try {
+    await main();
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      console.error(err.stack ?? err.message);
+    } else {
+      console.error('Unknown error:', err);
+    }
+    process.exit(1);
+  }
 }
