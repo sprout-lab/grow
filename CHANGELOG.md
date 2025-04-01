@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sprout-lab/grow/compare/v1.2.1...v1.3.0) (2025-04-01)
+
+
+### Features
+
+* improved boilerplate starting points for main.ts and tests.spec.ts ([8bee4d8](https://github.com/sprout-lab/grow/commit/8bee4d8fbffb8b392e980366a9d160f3c31df0a5))
+
 ## [1.2.1](https://github.com/sprout-lab/grow/compare/v1.2.0...v1.2.1) (2025-04-01)
 
 
