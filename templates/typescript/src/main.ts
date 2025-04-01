@@ -1,6 +1,6 @@
 export const greeting = async (): Promise<string> => {
   return new Promise((resolve) => {
-    resolve('Hello <%= it.projectName %>!!');
+    resolve('Hello <%= it.projectName %>!');
   });
 };
 
