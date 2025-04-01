@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/sprout-lab/grow/compare/v1.3.2...v1.3.3) (2025-04-01)
+
+
+### Bug Fixes
+
+* test project name string escapes ([954a199](https://github.com/sprout-lab/grow/commit/954a199177a56d003eff5f89f4e84db5bf783bbc))
+
 ## [1.3.2](https://github.com/sprout-lab/grow/compare/v1.3.1...v1.3.2) (2025-04-01)
 
 
