@@ -26,5 +26,5 @@
     "exactOptionalPropertyTypes": true,
     "noPropertyAccessFromIndexSignature": true
   },
-  "include": ["src"]
+  "include": ["src", "tests", "*.ts"]
 }
