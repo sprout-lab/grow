@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/sprout-lab/grow/compare/v1.1.4...v1.2.0) (2025-04-01)
+
+
+### Features
+
+* added tsx, tsup, eslint, and prettier ([7f87bc8](https://github.com/sprout-lab/grow/commit/7f87bc87439016de9e8e7f393857dbb59c52402f))
+
 ## [1.1.4](https://github.com/sprout-lab/grow/compare/v1.1.3...v1.1.4) (2025-03-31)
 
 
