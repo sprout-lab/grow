@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/sprout-lab/grow/compare/v1.3.0...v1.3.1) (2025-04-01)
+
+
+### Bug Fixes
+
+* update eslint config to v9 ([7de572d](https://github.com/sprout-lab/grow/commit/7de572d7c6a1a3d690b7ec08cc183258507c9d9c))
+
 # [1.3.0](https://github.com/sprout-lab/grow/compare/v1.2.1...v1.3.0) (2025-04-01)
 
 
