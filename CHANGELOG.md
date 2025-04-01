@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/sprout-lab/grow/compare/v1.3.1...v1.3.2) (2025-04-01)
+
+
+### Bug Fixes
+
+* linting ([a2d812c](https://github.com/sprout-lab/grow/commit/a2d812cb4ab2ac147d45b182b321f192b39ed922))
+
 ## [1.3.1](https://github.com/sprout-lab/grow/compare/v1.3.0...v1.3.1) (2025-04-01)
 
 
