@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/sprout-lab/grow/compare/v1.3.3...v1.3.4) (2025-04-01)
+
+
+### Bug Fixes
+
+* remove extra '!' in main.ts ([d1cf820](https://github.com/sprout-lab/grow/commit/d1cf820730205d59487faaf98be7c54ce0026103))
+
 ## [1.3.3](https://github.com/sprout-lab/grow/compare/v1.3.2...v1.3.3) (2025-04-01)
 
 
