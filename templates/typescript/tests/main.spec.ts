@@ -2,8 +2,8 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { greeting, main } from '../src/main';
 
 describe('greeting()', () => {
-  it('returns the correct greeting', () => {
-    expect(greeting()).toBe('Hello <%= it.projectName %>!');
+  it('returns the correct greeting', async () => {
+    expect(await greeting()).toBe('Hello <%= it.projectName %>!');
   });
 });
 
