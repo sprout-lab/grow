@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/sprout-lab/grow/compare/v1.2.0...v1.2.1) (2025-04-01)
+
+
+### Bug Fixes
+
+* removed ts-node ([1a72f7d](https://github.com/sprout-lab/grow/commit/1a72f7dd6e15bf1f0e82a7a41d8d447e06497603))
+
 # [1.2.0](https://github.com/sprout-lab/grow/compare/v1.1.4...v1.2.0) (2025-04-01)
 
 
