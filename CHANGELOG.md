@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/sprout-lab/grow/compare/v1.3.4...v1.3.5) (2025-04-01)
+
+
+### Bug Fixes
+
+* greeting unit test ([10a9702](https://github.com/sprout-lab/grow/commit/10a970234d0e44091fad88645335e4f7c80f559d))
+
 ## [1.3.4](https://github.com/sprout-lab/grow/compare/v1.3.3...v1.3.4) (2025-04-01)
 
 
